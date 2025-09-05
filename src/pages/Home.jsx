@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <div className="home">
-      <h1 className="title">Добро пожаловать</h1>
+      <h1 className="title">метопролол и соталол</h1>
       </div>
     </>
   );
