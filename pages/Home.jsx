@@ -12,7 +12,7 @@ import BackToTop from "../components/BackToTop";
 import { filteredProjects, moreInfo } from "../config";
 // Utils
 import { updateTitle } from "../utils";
-
+import "./Home.css";
 // #region component
 const Home = () => {
   const { data: userData } = useGetUsersQuery();
@@ -23,18 +23,9 @@ const Home = () => {
 
   return (
     <>
-      <Hero name={userData.name} />
-      <main>
-        <AboutMe
-          avatar_url={userData.avatar_url}
-          bio={userData.bio}
-          moreInfo={moreInfo}
-        />
-        <Skills />
-        <Projects filteredProjects={filteredProjects} />
-        <Contact />
-      </main>
-      <BackToTop />
+      <div className="home">
+      <h1 className="title">Добро пожаловать</h1>
+      </div>
     </>
   );
 };
